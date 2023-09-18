@@ -111,7 +111,7 @@ img, video {
 
     .container {
         height: 75vh;
-        width: 60%;
+        width: 80%;
         margin:auto;
         justify-content: space-between;
         border-radius: 10px;
@@ -298,3 +298,18 @@ img, video {
 }
 
 // Body for Sidebar is different 
+
+
+@media  screen and (max-width:927px) {
+
+    .loginPage, .registerPage {
+        .container {
+            width: 50%;
+        }
+    }
+    
+}
+
+::-webkit-scrollbar {
+    display: none;
+}

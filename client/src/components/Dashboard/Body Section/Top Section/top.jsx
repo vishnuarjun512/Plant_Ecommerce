@@ -4,7 +4,7 @@ import "./top.scss";
 import { BiSearchAlt } from "react-icons/bi";
 import { TbMessageCircleCode } from "react-icons/tb";
 import { IoNotificationsOutline } from "react-icons/io5";
-import { BsArrowRightShort } from "react-icons/bs";
+import { BsArrowRightShort, BsQuestionCircleFill } from "react-icons/bs";
 
 // Images Import
 import img from "../../../../Assets/man.png";
@@ -77,7 +77,7 @@ const Top = () => {
               <img src={img2} alt="Image name" />
             </div>
 
-            {/* <div className="sideBarCard">
+            <div className="sideBarCard">
               <BsQuestionCircleFill className="icon" />
               <div className="cardContent">
                 <div className="circle1"></div>
@@ -88,7 +88,7 @@ const Top = () => {
                 </p>
                 <button className="btn">Go to help center</button>
               </div>
-            </div> */}
+            </div>
           </div>
         </div>
       </div>

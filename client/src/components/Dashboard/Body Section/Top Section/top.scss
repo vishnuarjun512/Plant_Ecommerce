@@ -168,6 +168,82 @@
         .leftCard {
             flex-basis: 50%;
 
+            .sideBarCard {
+                width: 100%;
+                padding: 1rem;
+                text-align: center;
+                position: relative;
+        
+                .icon {
+                    position: absolute;
+                    background: var(--hoverColor);
+                    border:10px solid var(--whiteColor);
+                    font-size:3rem;
+                    top: -8px;
+                    border-radius: 50%;
+                    top: -10px;
+                    right: 50%;
+                    transform: translate(50%);
+                    z-index: 100;
+                }
+        
+                .cardContent {
+                    position: relative;
+                    padding: 1rem;
+                    background: var(--hoverColor);
+                    border-radius: 10px;
+                    overflow: hidden;
+        
+                    h3 {
+                        font-size: var(--h3FontSize);
+                        margin-top: 1rem;
+                        padding: 1rem 0;
+                        font-weight: 800;
+                        color:var(--blackColor)
+                    }
+        
+                    p {
+                        font-size: var(--normalFontSize);
+                        color: var(--greyText);
+                        padding-bottom: 1rem;
+                        font-weight: 500;
+                    }
+        
+                    .btn {
+                        position:relative;
+                        color:var(--greyText);
+                        z-index: 1000;
+        
+                        &:hover {
+                            background: var(--primaryColor);
+                            color: var(--whiteColor);
+                        }
+                    }
+        
+                    .circle1, .circle2 {
+                        position: absolute;
+                        background: var(--paleGreen);
+                        border-radius: 50% ;
+                        opacity: .7;
+                    }
+        
+                    .circle1 {
+                        height: 100%;
+                        width: 100%;
+                        top: -50%;
+                        left: -70%;
+                    }
+        
+                    .circle2 {
+                        height: 150%;
+                        width: 150%;
+                        bottom: -80%;
+                        right: -110%;
+                        z-index: 1;
+                    }
+                }
+            }
+
             .main {
                 position: relative;
                 padding: 1rem;
@@ -245,6 +321,21 @@
                     }
                 }
             }
+        }
+    }
+}
+
+// Media Queries =====>> 
+
+@media  screen and (max-width:990px) {
+    .cardSection {
+        flex-direction: column;
+
+        .rightCard, .leftCard{
+            width: 100%;
+            flex-basis: 100%;
+
+            
         }
     }
 }

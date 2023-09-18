@@ -11,12 +11,12 @@ const Dashboard = () => {
     <div className="container">
       <Sidebar></Sidebar>
       <Body></Body>
-      <Link to={"/"}>
+      {/* <Link to={"/"}>
         <button className="btn flex">
           <span>Login</span>
           <AiOutlineSwapLeft className="icon"></AiOutlineSwapLeft>
         </button>
-      </Link>
+      </Link> */}
     </div>
   );
 };

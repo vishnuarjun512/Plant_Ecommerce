@@ -101,13 +101,48 @@
                 }
 
 
-
-
-
             }
         }
     }
 
+   
+        .logout {
+            position:relative;
+            color:var(--greyText);
+            z-index: 1000;
+            border:none;
+            outline:none;
+            cursor: pointer;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px var(--inputColor);
+            background: var(--hoverColor);
+            color: darkolivegreen;
+            padding: 12px;
+            margin: 10px;
+            font-weight: 800;
+            text-align: center;
+            justify-content: center;
+            font-size: 18px;   
+            width: 240px;
+       
+            span {
+                margin: 4px;
+            }
+
+            &:hover {
+                span {
+                margin: 20px;
+            }
+        }
+    
+            
+            &:hover {
+                background: lightcoral;
+                color: var(--whiteColor);
+            } 
+        }
+   
+        
     .sideBarCard {
         width: 100%;
         padding: 1rem;
